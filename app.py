@@ -88,6 +88,12 @@ def restock(quantity,book_id):
   
   # save changes to db
   con.commit()
+  
+  
+ 
 
 
-eel.start("index.html")
+eel.start('index.html', mode='my_portable_chromium', 
+                        host='localhost', 
+                        port=27000, 
+                        block=True )
